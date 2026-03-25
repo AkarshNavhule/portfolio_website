@@ -50,18 +50,21 @@ export default function DigitalTwinCard({ number, title, description, tech, gith
             </a>
           ))}
 
-          {/* Video */}
+          {/* Video — Instagram reel 9:16 */}
           {video && (
             <div className="mt-6">
               <p className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-3">Talking Video</p>
-              <video
-                src={video}
-                controls
-                muted
-                loop
-                playsInline
-                className="w-full rounded-xl border border-surface-3 max-h-52 object-cover"
-              />
+              <div className="relative rounded-xl overflow-hidden border border-surface-3 mx-auto" style={{ aspectRatio: '9/16', maxWidth: '220px' }}>
+                <video
+                  src={video}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  controls
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
             </div>
           )}
         </div>

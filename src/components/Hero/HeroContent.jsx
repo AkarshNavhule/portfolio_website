@@ -37,30 +37,28 @@ function YouTubeIcon() {
 export default function HeroContent() {
   return (
     <motion.div
-      className="relative z-10 flex flex-col justify-center min-h-screen px-6 max-w-6xl mx-auto"
+      className="relative z-10 flex flex-col items-center justify-center text-center min-h-screen px-6 max-w-6xl mx-auto"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
-      <motion.div variants={itemVariants} className="mb-3">
+      {/* <motion.div variants={itemVariants} className="mb-3">
         <span className="inline-flex items-center gap-2 px-3 py-1 bg-accent/10 border border-accent/30 rounded-full text-accent text-sm font-medium">
           <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
           Available for work
         </span>
-      </motion.div>
+      </motion.div> */}
 
       <motion.h1
         variants={itemVariants}
-        className="text-5xl md:text-7xl font-black text-white leading-tight tracking-tight mb-4"
+        className="text-5xl md:text-7xl font-black text-white leading-tight tracking-tight mb-4 mt-20"
       >
-        AKARSH
-        <br />
-        <span className="text-gradient">NAVHULE</span>
+        AKARSH <span className="text-gradient">NAVHULE</span>
       </motion.h1>
 
       <motion.p
         variants={itemVariants}
-        className="text-lg md:text-xl text-gray-400 font-medium mb-2 max-w-xl"
+        className="text-lg md:text-xl text-gray-400 font-medium mb-2"
       >
         Full Stack Developer
         <span className="text-accent mx-2">·</span>
@@ -69,7 +67,7 @@ export default function HeroContent() {
 
       <motion.p
         variants={itemVariants}
-        className="text-gray-500 text-base max-w-lg mb-8 leading-relaxed"
+        className="text-gray-500 text-base max-w-xl mb-8 leading-relaxed"
       >
         Building production-grade AI-powered applications — React/Next.js frontends, FastAPI backends,
         cloud infra on GCP, and AI pipelines with RAG & LLMs.
@@ -90,46 +88,43 @@ export default function HeroContent() {
         </a>
       </motion.div>
 
-      <motion.div variants={itemVariants} className="flex items-center gap-5">
-        <a
-          href="https://github.com/akarshnavhule"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-500 hover:text-white transition-colors"
-          aria-label="GitHub"
-        >
-          <GitHubIcon />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/akarsh-navhule"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-500 hover:text-accent transition-colors"
-          aria-label="LinkedIn"
-        >
-          <LinkedInIcon />
-        </a>
-        <a
-          href="https://www.youtube.com/@akarshnavhule111"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-500 hover:text-red-500 transition-colors"
-          aria-label="YouTube"
-        >
-          <YouTubeIcon />
-        </a>
-
-        <div className="h-px flex-1 max-w-24 bg-surface-3" />
-
-        <div className="flex gap-4 text-sm text-gray-500">
-          <span>📍 Bengaluru, India</span>
+      <motion.div variants={itemVariants} className="flex flex-col items-center gap-4">
+        <div className="flex items-center gap-5">
+          <a
+            href="https://github.com/akarshnavhule"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-white transition-colors"
+            aria-label="GitHub"
+          >
+            <GitHubIcon />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/akarsh-navhule"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-accent transition-colors"
+            aria-label="LinkedIn"
+          >
+            <LinkedInIcon />
+          </a>
+          <a
+            href="https://www.youtube.com/@akarshnavhule111"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-red-500 transition-colors"
+            aria-label="YouTube"
+          >
+            <YouTubeIcon />
+          </a>
         </div>
+        <span className="text-sm text-gray-500">📍 Bengaluru, India</span>
       </motion.div>
 
       {/* Scroll indicator */}
       <motion.div
         variants={itemVariants}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-600"
+        className="flex flex-col items-center gap-2 text-gray-600 mt-8"
       >
         <span className="text-xs tracking-widest uppercase">Scroll</span>
         <motion.div

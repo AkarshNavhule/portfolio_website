@@ -32,10 +32,11 @@ export default function MotionGallery() {
               <div className="relative bg-black">
                 <video
                   src={video.src}
-                  controls
+                  autoPlay
                   muted
                   loop
                   playsInline
+                  controls
                   className="w-full max-h-72 object-contain"
                 />
               </div>

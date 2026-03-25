@@ -25,14 +25,14 @@ export const skillCategories = [
     skills: ['MongoDB', 'PostgreSQL', 'ChromaDB'],
   },
   {
-    category: 'Cloud & DevOps',
+    category: 'Cloud',
     icon: '☁️',
     skills: ['GCP Compute Engine', 'Cloud Storage', 'Nginx', 'ngrok'],
   },
   {
     category: 'Tools & APIs',
     icon: '🔧',
-    skills: ['Claude Code', 'Cursor AI', 'Google Vision API', 'AWS Rekognition', 'Razorpay API', 'WhatsApp Business API'],
+    skills: ['Claude Code', 'Antigravity','VS Code'],
   },
   {
     category: 'Prompt Engineering',

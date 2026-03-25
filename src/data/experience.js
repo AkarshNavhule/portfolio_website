@@ -22,9 +22,10 @@ export const experiences = [
     duration: 'Nov 2025 – Mar 2026',
     bullets: [
       'Built and maintained Malnad Realty (malnadrealty.com), a NoBroker-style property marketplace, integrating 150+ REST APIs across Next.js, Spring Boot, and FastAPI.',
-      'Sole engineer for end-to-end GCP deployment: Compute Engine VMs, Nginx reverse proxy, iptables firewall, MongoDB and PostgreSQL.',
+      'Sole engineer for end-to-end GCP deployment: Compute Engine VMs, Nginx reverse proxy,firewall rules, MongoDB and PostgreSQL.',
       'Integrated OTP login, WhatsApp notification APIs, Google Cloud Storage, and headless WordPress CMS.',
     ],
     tech: ['Next.js', 'Spring Boot', 'FastAPI', 'MongoDB', 'PostgreSQL', 'GCP', 'Nginx'],
+    link: 'https://malnadrealty.com',
   },
 ]

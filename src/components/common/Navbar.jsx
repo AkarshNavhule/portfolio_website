@@ -6,8 +6,8 @@ const navItems = [
   { label: 'Skills', href: 'skills' },
   { label: 'Experience', href: 'experience' },
   { label: 'Projects', href: 'projects' },
-  { label: 'Motion', href: 'motion' },
-  { label: 'Videos', href: 'videos' },
+  { label: 'Motion Graphics', href: 'motion' },
+  { label: 'YouTube Videos', href: 'videos' },
   { label: 'Education', href: 'education' },
 ]
 
@@ -32,13 +32,8 @@ export default function Navbar() {
       }`}
     >
       <nav className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <button
-          onClick={() => scrollTo('home')}
-          className="text-white font-bold text-lg tracking-tight hover:text-accent transition-colors"
-        >
-          AN<span className="text-accent">.</span>
-        </button>
+        {/* Logo placeholder — keeps layout balanced */}
+        <div />
 
         {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-8">
@@ -53,14 +48,6 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-
-        {/* Hire Me button */}
-        <a
-          href="mailto:akarshnavhule@gmail.com"
-          className="hidden md:inline-flex items-center gap-2 px-4 py-2 bg-accent hover:bg-accent-dark text-white text-sm font-semibold rounded-lg transition-colors glow-hover"
-        >
-          Hire Me
-        </a>
 
         {/* Mobile hamburger */}
         <button
@@ -98,14 +85,6 @@ export default function Navbar() {
                   </button>
                 </li>
               ))}
-              <li>
-                <a
-                  href="mailto:akarshnavhule@gmail.com"
-                  className="inline-flex px-4 py-2 bg-accent text-white text-sm font-semibold rounded-lg"
-                >
-                  Hire Me
-                </a>
-              </li>
             </ul>
           </motion.div>
         )}

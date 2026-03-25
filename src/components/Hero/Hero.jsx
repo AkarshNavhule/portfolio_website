@@ -1,4 +1,4 @@
-import ParticleField from './ParticleField'
+import DotGrid from './DotGrid'
 import HeroContent from './HeroContent'
 
 export default function Hero() {
@@ -6,27 +6,33 @@ export default function Hero() {
     <section
       id="home"
       className="relative min-h-screen overflow-hidden bg-navy"
-      style={{ touchAction: 'none' }}
     >
-      {/* Gradient overlays for depth */}
+      {/* DotGrid background — full viewport */}
+      <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+        <DotGrid
+          dotSize={5}
+          gap={15}
+          baseColor="#271E37"
+          activeColor="#2998ff"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
+      </div>
+
+      {/* Subtle vignette overlay so text stays readable */}
       <div
-        className="absolute inset-0 pointer-events-none z-[1]"
+        className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse at 20% 50%, rgba(26,86,219,0.12) 0%, transparent 60%)',
-        }}
-      />
-      <div
-        className="absolute inset-0 pointer-events-none z-[1]"
-        style={{
-          background: 'radial-gradient(ellipse at 80% 50%, rgba(59,130,246,0.06) 0%, transparent 60%)',
+          background: 'radial-gradient(ellipse at 50% 50%, transparent 40%, rgba(10,15,30,0.7) 100%)',
+          zIndex: 1,
         }}
       />
 
-      {/* 3D Canvas */}
-      <ParticleField />
-
-      {/* Content */}
-      <div className="relative z-10">
+      {/* Content on top */}
+      <div style={{ position: 'relative', zIndex: 2 }}>
         <HeroContent />
       </div>
     </section>
