@@ -49,6 +49,19 @@ export default function Navbar() {
           ))}
         </ul>
 
+        {/* Resume button (desktop) */}
+        <a
+          href="/Akarsh Navhule — Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden md:inline-flex items-center gap-2 px-4 py-1.5 border border-surface-3 hover:border-accent text-gray-300 hover:text-white text-sm font-medium rounded-lg transition-all duration-200"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17v3a1 1 0 001 1h16a1 1 0 001-1v-3" />
+          </svg>
+          Resume
+        </a>
+
         {/* Mobile hamburger */}
         <button
           className="md:hidden text-gray-400 hover:text-white"
@@ -85,6 +98,19 @@ export default function Navbar() {
                   </button>
                 </li>
               ))}
+              <li>
+                <a
+                  href="/Akarsh Navhule — Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-gray-300 hover:text-accent text-base font-medium"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17v3a1 1 0 001 1h16a1 1 0 001-1v-3" />
+                  </svg>
+                  Resume
+                </a>
+              </li>
             </ul>
           </motion.div>
         )}

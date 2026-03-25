@@ -86,6 +86,17 @@ export default function HeroContent() {
         >
           Get In Touch
         </a>
+        <a
+          href="/Akarsh Navhule — Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-6 py-3 border border-surface-3 hover:border-accent text-gray-300 hover:text-white font-semibold rounded-xl transition-all duration-200"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17v3a1 1 0 001 1h16a1 1 0 001-1v-3" />
+          </svg>
+          Resume
+        </a>
       </motion.div>
 
       <motion.div variants={itemVariants} className="flex flex-col items-center gap-4">
