@@ -42,7 +42,7 @@ export default function Education() {
             </div>
             <h3 className="text-white font-bold text-lg mb-3">Interests & Activities</h3>
             <div className="flex flex-wrap gap-2">
-              {['Trekking', 'Long-distance bike rides', 'Car enthusiast', 'Ghat & mountain roads', 'Surfing'].map((interest) => (
+              {['Trekking', 'Long-distance bike rides', 'Car enthusiast', 'Surfing'].map((interest) => (
                 <span
                   key={interest}
                   className="px-3 py-1.5 bg-surface-2 border border-surface-3 text-gray-300 text-sm rounded-full"
