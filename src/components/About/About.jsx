@@ -17,7 +17,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              Results-driven <span className="text-white font-semibold">Full Stack Developer</span> with 2 years
+              Results-driven <span className="text-white font-semibold">Full Stack Developer</span> with 1.5+ years
               of industry experience building and deploying production-grade AI-powered applications.
             </p>
             <p className="text-gray-400 leading-relaxed mb-6">
