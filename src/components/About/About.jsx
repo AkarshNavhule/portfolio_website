@@ -2,7 +2,7 @@ import SectionWrapper from '../common/SectionWrapper'
 import SectionHeading from '../common/SectionHeading'
 
 const stats = [
-  { label: 'Years Experience', value: '1.5+' },
+  { label: 'Years Experience', value: '2' },
   { label: 'Projects Built', value: '10+' },
   { label: 'APIs Integrated', value: '150+' },
   { label: 'AI Pipelines', value: '6+' },
@@ -17,7 +17,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              Results-driven <span className="text-white font-semibold">Full Stack Developer</span> with 1.5+ years
+              Results-driven <span className="text-white font-semibold">Full Stack Developer</span> with 2 years
               of industry experience building and deploying production-grade AI-powered applications.
             </p>
             <p className="text-gray-400 leading-relaxed mb-6">
