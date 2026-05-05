@@ -19,7 +19,7 @@ export const experiences = [
     role: 'Freelance Full Stack Developer',
     company: 'Self-Employed',
     location: 'Bengaluru, India',
-    duration: 'Nov 2025 – Mar 2026',
+    duration: 'Nov 2025 – April 2026',
     bullets: [
       'Built and maintained Malnad Realty (malnadrealty.com), a NoBroker-style property marketplace, integrating 150+ REST APIs across Next.js, Spring Boot, and FastAPI.',
       'Sole engineer for end-to-end GCP deployment: Compute Engine VMs, Nginx reverse proxy,firewall rules, MongoDB and PostgreSQL.',
